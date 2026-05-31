@@ -1,1 +1,5 @@
 # polusem4
+pandas>=1.5.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+pyarrow>=11.0.0
