@@ -18,10 +18,6 @@ def ensure_dirs():
     os.makedirs(PLOTS_DIR, exist_ok=True)
 
 def find_gap_threshold(values):
-    """
-    Порог = последнее значение перед максимальным разрывом.
-    Если выборка слишком мала или все значения равны -> None.
-    """
     if len(values) < MIN_RESPONDENTS_PER_GROUP:
         return None
     vals = np.sort(values)
